@@ -26,10 +26,21 @@ In this project you will create a login page and request a token from the server
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain what a token is used for.
-- [ ] What steps can you take in your web apps to keep your data secure?
-- [ ] Describe how web servers work.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+- [X] Explain what a token is used for.
+
+        Token is used for verification. In the case of this project we are passing a 'token' to our local storage once the user has successfully logged in and that token is checked inside our local storage. If the token is found the user is redirected to the applications page past the login screen with the information from our server, if not then the login page will refresh.
+
+- [X] What steps can you take in your web apps to keep your data secure?
+
+      Encrypting user login data to prevent others from trying to break in as a different user. Keeping your tools up to date in your application. Hosting your web apps on trusted servers and trusted ways to back up code.
+
+- [X] Describe how web servers work.
+
+        A way to authenticate data. A web server is a place for our client to connect to that holds the information for logging in and default data for our application. In the case of this project our server holds our login credentials along with our color information. Once the user has logged in and the server sees the token being passed we are shown the information of our colors from our server.
+
+- [X] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+        PUT would be the U part of CRUD, being update. PUT will change a resources information by taking in a body object like POST and checks to see what data needs to be updated. Delete would be the D in CRUD because we are using delete to destroy data that lives in our web page.
 
 
 ## Project Set Up
